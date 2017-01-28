@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Kvizo</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-route/angular-route.min.js"></script>
+<!--   <script src="/js/client.js"></script>  
+  <script src="/js/controllers/artist.js"></script> 
+  <script src="/js/controllers/manager.js"></script> 
+ --></head>
+<body ng-app="kvizoApp">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Kvizo</a></li>
+        <li><a href="api/spanish">Spanish</a></li>
+        <li><a href="api/italian">Italian</a></li>
+    
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <ng-view></ng-view>
+  </main>
+  <footer>
+    &copy; Kvizo- Learn a Language
+  </footer>
+</body>
+</html>

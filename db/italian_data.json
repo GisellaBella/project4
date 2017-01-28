@@ -1,0 +1,313 @@
+{
+    "italian_phrases":
+    [{
+    "english_phrase": "I live in (the U.S/ Italy)",
+    "italian_phrase": "Vivo (negli stati uniti / in Italia)"
+}, {
+    "english_phrase": "Come with me!",
+    "italian_phrase": "Vieni con me!/ Venga con me! (polite)"
+}, {
+    "english_phrase": "Go straight! then turn left/ right!",
+    "italian_phrase": "Vada dritto! e poi giri a destra/ sinistra!"
+}, {
+    "english_phrase": "One, Two, Three",
+    "italian_phrase": "Uno, Due, Tre."
+}, {
+    "english_phrase": "One moment please!",
+    "italian_phrase": "Un momento prego!"
+}, {
+    "english_phrase": "I will be right back!",
+    "italian_phrase": "Torno subito!"
+}, {
+    "english_phrase": "Do you like it?",
+    "italian_phrase": "Ti piace?"
+}, {
+    "english_phrase": "Did you like it here?",
+    "italian_phrase": "ti piace qui?"
+}, {
+    "english_phrase": "I love you!",
+    "italian_phrase": "Ti amo!/ Ti voglio bene!"
+}, {
+    "english_phrase": "I've been learning Italian for 1 month",
+    "italian_phrase": "Sto imparando l'italiano da un mese."
+}, {
+    "english_phrase": "I'm looking for john.",
+    "italian_phrase": "Sto cercando John."
+}, {
+    "english_phrase": "It's 10 o'clock. 07:30pm.",
+    "italian_phrase": "Sono le dieci in punto. Le sette e trenta"
+}, {
+    "english_phrase": "I'm (American)",
+    "italian_phrase": "Sono americano."
+}, {
+    "english_phrase": "I'm hungry/ thirsty.",
+    "italian_phrase": "Sono Affamato/ Assetato."
+}, {
+    "english_phrase": "I'm from (the U.S/ Italy)",
+    "italian_phrase": "Sono (statunitense, italiano)."
+}, {
+    "english_phrase": "Just a little.",
+    "italian_phrase": "Solo un po'."
+}, {
+    "english_phrase": "Mr.../ Mrs.…/ Miss…",
+    "italian_phrase": "Signor …/ Signora …/ Signorina"
+}, {
+    "english_phrase": "Yes/ No",
+    "italian_phrase": "Si/ No"
+}, {
+    "english_phrase": "Seven, Eight, Nine, Ten",
+    "italian_phrase": "Sette, Otto, Nove, Dieci."
+}, {
+    "english_phrase": "You're very kind!",
+    "italian_phrase": "Sei molto gentile!/ lei è molto gentile (polite)"
+}, {
+    "english_phrase": "Excuse me ...! (to ask for something)",
+    "italian_phrase": "Scusami!/ Mi scusi! (polite)"
+}, {
+    "english_phrase": "Sorry (for a mistake)",
+    "italian_phrase": "Scusami!/ Mi scusi! (polite)"
+}, {
+    "english_phrase": "Write It Down Please!",
+    "italian_phrase": "Scrivilo per favore!/ Lo scriva per favore (polite)"
+}, {
+    "english_phrase": "Hurry up!",
+    "italian_phrase": "Sbrigati!"
+}, {
+    "english_phrase": "Bless you (when sneezing)",
+    "italian_phrase": "Salute!"
+}, {
+    "english_phrase": "Say hi to John for me",
+    "italian_phrase": "Saluta John da parte mia!"
+}, {
+    "english_phrase": "This/ That. Here/There",
+    "italian_phrase": "Questo/ Quello. Qui/ Li."
+}, {
+    "english_phrase": "Four, Five, Six",
+    "italian_phrase": "Quattro, Cinque, Sei."
+}, {
+    "english_phrase": "How much is this?",
+    "italian_phrase": "Quanto costa questo?"
+}, {
+    "english_phrase": "How old are you?",
+    "italian_phrase": "Quanti anni hai?"
+}, {
+    "english_phrase": "What's your name?",
+    "italian_phrase": "Quale è il suo nome?"
+}, {
+    "english_phrase": "Can You Speak Slowly?",
+    "italian_phrase": "Puoi parlare lentamente? Potrebbe parlare lentamente? (polite)"
+}, {
+    "english_phrase": "You're welcome! (for ",
+    "italian_phrase": "Prego!"
+}, {
+    "english_phrase": "Can You Say It Again?",
+    "italian_phrase": "Potresti ripetere per favore?/ Potrebbe ripetere per favore? (polite)"
+}, {
+    "english_phrase": "Can you help me?",
+    "italian_phrase": "Potresti aiutarmi?/ potrebbe aiutarmi? (polite)"
+}, {
+    "english_phrase": "Can I help you?",
+    "italian_phrase": "Posso aiutarti?/ posso aiutarla (polite)?"
+}, {
+    "english_phrase": "Excuse me! ( to pass by)",
+    "italian_phrase": "Permesso"
+}, {
+    "english_phrase": "Do you speak (English/ Italian)?",
+    "italian_phrase": "Parli (inglese/italiano)?/ Parla (inglese/italiano)? (polite)"
+}, {
+    "english_phrase": "Today/ Now",
+    "italian_phrase": "Oggi/ Adesso"
+}, {
+    "english_phrase": "Don't worry!",
+    "italian_phrase": "non ti preoccupare !"
+}, {
+    "english_phrase": "I Have No Idea.",
+    "italian_phrase": "Non ne ho idea!"
+}, {
+    "english_phrase": "Nothing much",
+    "italian_phrase": "Non molto"
+}, {
+    "english_phrase": "I Don't Know!",
+    "italian_phrase": "Non lo so!"
+}, {
+    "english_phrase": "I Don't Understand!",
+    "italian_phrase": "Non capisco!"
+}, {
+    "english_phrase": "No Problem!",
+    "italian_phrase": "Non c'è problema!"
+}, {
+    "english_phrase": "I'm lost",
+    "italian_phrase": "Mi sono perso/ persa (feminine)"
+}, {
+    "english_phrase": "I feel sick.",
+    "italian_phrase": "Mi sento male!"
+}, {
+    "english_phrase": "I missed you so much!",
+    "italian_phrase": "Mi sei mancato molto!"
+}, {
+    "english_phrase": "I'm Sorry! (if you don't hear something)",
+    "italian_phrase": "Mi scusi? / Prego ?"
+}, {
+    "english_phrase": "I'd like to visit Italy one day",
+    "italian_phrase": "Mi piacerebbe visitare l'Italia un giorno di questi!"
+}, {
+    "english_phrase": "I like Italian",
+    "italian_phrase": "Mi piace l'italiano."
+}, {
+    "english_phrase": "I really like it!",
+    "italian_phrase": "Mi piace davvero."
+}, {
+    "english_phrase": "My name is ...",
+    "italian_phrase": "Mi chiamo ..."
+}, {
+    "english_phrase": "I work as a (translator/ businessman)",
+    "italian_phrase": "Lavoro come (traduttore/ uomo d'affari)"
+}, {
+    "english_phrase": "Italy is a wonderful country",
+    "italian_phrase": "L'italia è un paese meraviglioso."
+}, {
+    "english_phrase": "Me/ You. Him/ Her.",
+    "italian_phrase": "io/ tu, voi (you polite). Lui/ Lei"
+}, {
+    "english_phrase": "My Italian is bad.",
+    "italian_phrase": "il mio italiano è orribile."
+}, {
+    "english_phrase": "I need a doctor",
+    "italian_phrase": "Ho bisogno di un dottore!"
+}, {
+    "english_phrase": "I need to practice my Italian",
+    "italian_phrase": "ho bisogno di fare pratica con il mio italiano"
+}, {
+    "english_phrase": "I'm (twenty, thirty...) years old.",
+    "italian_phrase": "Ho (venti, trenta …) anni."
+}, {
+    "english_phrase": "Look!",
+    "italian_phrase": "Guarda!"
+}, {
+    "english_phrase": "Thank you (very much)!",
+    "italian_phrase": "Grazie! / (Molte grazie)!"
+}, {
+    "english_phrase": "Big/ Small",
+    "italian_phrase": "Grande/ Piccolo"
+}, {
+    "english_phrase": "Oh! That's good!",
+    "italian_phrase": "Grande!"
+}, {
+    "english_phrase": "Happy new year!",
+    "italian_phrase": "Felice anno nuovo!"
+}, {
+    "english_phrase": "Here you go! (when giving something)",
+    "italian_phrase": "Eccolo!"
+}, {
+    "english_phrase": "Nice to meet you!",
+    "italian_phrase": "è un piacere conoscerti!/ è un piacere conoscerla (polite)"
+}, {
+    "english_phrase": "And you?",
+    "italian_phrase": "e tu? e lei? (polite)"
+}, {
+    "english_phrase": "Where do you live?",
+    "italian_phrase": "Dove vivi?/ Dove vive? (polite)"
+}, {
+    "english_phrase": "Where is the (bathroom/ pharmacy)?",
+    "italian_phrase": "Dove posso trovare (il bagno/ la farmacia?)"
+}, {
+    "english_phrase": "Tomorrow/ Yesterday",
+    "italian_phrase": "Domani/ ieri"
+}, {
+    "english_phrase": "In The Morning/ Evening/ At Night.",
+    "italian_phrase": "Di mattina/ Di sera/ Di notte. "
+}, {
+    "english_phrase": "Where are you from?",
+    "italian_phrase": "Di dove sei?/ Di dove è? (polite)"
+}, {
+    "english_phrase": "I have to go",
+    "italian_phrase": "Devo andare"
+}, {
+    "english_phrase": "Really!",
+    "italian_phrase": "Davvero!"
+}, {
+    "english_phrase": "Give me this!",
+    "italian_phrase": "Dammi questo!"
+}, {
+    "english_phrase": "What? Where?",
+    "italian_phrase": "Cosa? Dove?"
+}, {
+    "english_phrase": "What Does ",
+    "italian_phrase": "Cosa significa "
+}, {
+    "english_phrase": "What do you do for a living?",
+    "italian_phrase": "cosa fai per vivere?"
+}, {
+    "english_phrase": "What's new?",
+    "italian_phrase": "Cosa c'è di nuovo?"
+}, {
+    "english_phrase": "What Is This?",
+    "italian_phrase": "Cos'è questa cosa?"
+}, {
+    "english_phrase": "Congratulations!",
+    "italian_phrase": "Congratulazioni!"
+}, {
+    "english_phrase": "How are you?",
+    "italian_phrase": "Come stai?/ Come state (polite)?"
+}, {
+    "english_phrase": "What's That Called In Italian?",
+    "italian_phrase": "Come si chiama quella cosa in italiano?"
+}, {
+    "english_phrase": "How Do You Say ",
+    "italian_phrase": "Come dite “please” in italiano?"
+}, {
+    "english_phrase": "Hey! Friend!",
+    "italian_phrase": "Ciao! Amico!"
+}, {
+    "english_phrase": "Hi!",
+    "italian_phrase": "Ciao!"
+}, {
+    "english_phrase": "What time is it?",
+    "italian_phrase": "Che ore sono?"
+}, {
+    "english_phrase": "Good/ Bad/ So-So.",
+    "italian_phrase": "Buono/ Cattivo/ Così e così"
+}, {
+    "english_phrase": "Good morning!",
+    "italian_phrase": "Buongiorno!"
+}, {
+    "english_phrase": "Good evening!",
+    "italian_phrase": "Buona sera!"
+}, {
+    "english_phrase": "Good night!",
+    "italian_phrase": "Buona notte!"
+}, {
+    "english_phrase": "Good night and sweet dreams!",
+    "italian_phrase": "Buona notte e sogni d'oro!"
+}, {
+    "english_phrase": "Good luck!",
+    "italian_phrase": "Buona fortuna!"
+}, {
+    "english_phrase": "Merry Christmas!",
+    "italian_phrase": "Buon natale!"
+}, {
+    "english_phrase": "Happy birthday!",
+    "italian_phrase": "Buon compleanno!"
+}, {
+    "english_phrase": "Enjoy! (for meals...)",
+    "italian_phrase": "Buon appetito!"
+}, {
+    "english_phrase": "Welcome! (to greet someone)",
+    "italian_phrase": "Benvenuto!/ Benvenuta! (female)"
+}, {
+    "english_phrase": "Good/ So-So.",
+    "italian_phrase": "Bene/ così e così."
+}, {
+    "english_phrase": "I'm fine, thanks!",
+    "italian_phrase": "Bene, grazie!"
+}, {
+    "english_phrase": "Hold on please! (phone)",
+    "italian_phrase": "Attenda prego!"
+}, {
+    "english_phrase": "Good bye!",
+    "italian_phrase": "Arrivederci!"
+}, {
+    "english_phrase": "See you later!",
+    "italian_phrase": "A dopo"
+}]
+}
