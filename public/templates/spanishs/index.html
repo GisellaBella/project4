@@ -1,0 +1,29 @@
+<h2>Spanish Phrases</h2>
+
+<a class="btn" href="/spanishs/new">Add Spanish</a>
+
+<div class="spanishs">
+  <div class="row" ng-repeat="spanish in spanishsController.allSpanishs">
+    <ul>
+      <li>
+        <h2>
+          <a href="/spanishs/{{spanish.id}}">
+            {{spanish.english_phrase}}
+          </a>
+        </h2>
+      </li>
+      <li>
+        <a href="/spanishs/{{spanish.id}}/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <li>
+          <form ng-submit="spanishsController.deleteSpanish(spanish)">
+            <input type="submit" value="Delete"/>
+          </form>
+        </li>
+      </li>
+    </ul>
+  </div>
+</div>

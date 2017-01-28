@@ -1,3 +1,4 @@
+//Connect
 var Sequelize = require('sequelize');
 
 var sequelize = new Sequelize('postgres://gisellawalter@localhost:5432/kvizo_models');
@@ -6,8 +7,8 @@ var sequelize = new Sequelize('postgres://gisellawalter@localhost:5432/kvizo_mod
 module.exports.Sequelize = Sequelize;
 module.exports.sequelize = sequelize;
 
-var Italian = sequelize.import("./italian");
 var Spanish = sequelize.import("./spanish");
+var Italian = sequelize.import("./italian");
 
 module.exports.models = {
 	Italian : Italian,

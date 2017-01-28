@@ -1,0 +1,31 @@
+<h2>Learn Italian</h2>
+
+<a class="btn" href="/italians/new">Add an Italian Phrase</a>
+
+<div class="italians">
+  <div class="row" ng-repeat="italian in italiansController.allItalians">
+
+    <ul>
+      <li>
+        <h2>
+       
+            {{italian.italian_phrase}}
+          </a>
+        </h2>
+      </li>
+      <li>
+      {{ 4 * 4 }}
+        <a href="/italians/{{italian.id}}/edit">
+          Edit
+        </a>
+      </li>
+      <li>
+        <li>
+          <form ng-submit="italiansController.deleteItalian(italian)">
+            <input type="submit" value="Delete"/>
+          </form>
+        </li>
+      </li>
+    </ul>
+  </div>
+</div>

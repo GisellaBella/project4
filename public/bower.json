@@ -1,8 +1,7 @@
 {
-  "name": "kvizo",
-  "homepage": "",
+  "name": "Kvizo",
   "authors": [
-    "Gisella Walter - gisella@gmail.com"
+    "Gisella Walter <gisella@gmail.com>"
   ],
   "description": "",
   "main": "",
@@ -11,8 +10,6 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
   ],
   "dependencies": {
     "angular": "^1.6.1",

@@ -2,8 +2,8 @@ var db = require('../models');
 var Spanish = db.models.Spanish;
 
 function index(req, res) {
-	Spanish.findAll().then(function(spanishes) {
-		res.json(spanishes);
+	Spanish.findAll().then(function(spanishs) {
+		res.json(spanishs);
 	});
 }
 
@@ -17,7 +17,7 @@ function show(req, res) {
 
 function create(req, res) {
 	Spanish.create(req.body).then(function(spanish){
-    if(!spanish) return error(res, "not saved");  
+    if(!spanish) return error(res, "not saved");
     res.json(spanish);
   });
 }
@@ -40,7 +40,7 @@ function destroy(req, res) {
     return spanish.destroy();
   })
   .then(function(){
-    res.redirect("/spanish");
+    res.redirect("/spanishs");
   });  
 }
 

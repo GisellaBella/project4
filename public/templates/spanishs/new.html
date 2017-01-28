@@ -1,0 +1,11 @@
+<h2>New Spanish</h2>
+
+<form ng-submit="spanishNewController.saveSpanish()">
+  <label for="english_phrase">Phrase in English:</label>
+  <input ng-model="spanishNewController.newSpanish.english_phrase">
+
+  <label for="spanish_phrase">Phrase in Spanish:</label>
+  <input ng-model="spanishNewController.newSpanish.spanish_phrase">
+
+  <input type="submit" value="Create">
+</form>

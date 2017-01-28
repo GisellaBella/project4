@@ -40,7 +40,7 @@ function destroy(req, res) {
     return italian.destroy();
   })
   .then(function(){
-    res.redirect("/italian");
+    res.redirect("/italians");
   });  
 }
 
