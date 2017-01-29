@@ -7,19 +7,19 @@ var spanishsController = require('../controllers/spanishs.js');
 //Italian Routes
   
 // index
-router.get('/api/italians', italiansController.index);
+router.get('/api/italian', italiansController.index);
 
 // create
-router.post('/api/italians', italiansController.create);
+router.post('/api/italian', italiansController.create);
 
 // show
-router.get('/api/italians/:id', italiansController.show);
+router.get('/api/italian/:id', italiansController.show);
 
 // update
-router.put('/api/italians/:id', italiansController.update);
+router.put('/api/italian/:id', italiansController.update);
 
 // destroy
-router.delete('/api/italians/:id', italiansController.destroy);
+router.delete('/api/italian/:id', italiansController.destroy);
 
 //Spanish Routes
 

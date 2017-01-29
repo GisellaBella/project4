@@ -1,14 +1,4 @@
-var DB = require("../models").models;
-
-var spanishCreate = function() {
-	return DB.Spanish.create({
-    english_phrase: "Can I have water, please?",
-    spanish_phrase: "Puedo tener agua, por favor?"
-  });
-};
-
-var italianCreate = function() {
-	return DB.Italian.bulkCreate([{ english_phrase: "See you later!",
+[{ english_phrase: "See you later!",
    italian_phrase: "A dopo"
 }, {
     english_phrase: "...fizzy water",
@@ -610,14 +600,4 @@ var italianCreate = function() {
 }, {
     english_phrase: "I would like",
    italian_phrase: "Vorrei..."
-}]);
-};
-
-
-
-italianCreate()
-.then(spanishCreate)
-.then(function() {
-	process.exit();
-});
-
+}]
