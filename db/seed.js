@@ -1,10 +1,607 @@
 var DB = require("../models").models;
 
 var spanishCreate = function() {
-	return DB.Spanish.create({
+	return DB.Spanish.bulkCreate([{
+    english_phrase: "And you?",
+    spanish_phrase: "¿Y Tú?"
+}, {
+    english_phrase: "Beans",
+    spanish_phrase: "Frijoles"
+}, {
+    english_phrase: "Big/ Small",
+    spanish_phrase: "Grande/ Pequeño"
+}, {
+    english_phrase: "Bless you (when sneezing)",
+    spanish_phrase: "¡Salud!"
+}, {
+    english_phrase: "Bless you.",
+    spanish_phrase: "Salud."
+}, {
+    english_phrase: "Call me.",
+    spanish_phrase: "Llámame."
+}, {
+    english_phrase: "Call me. (Talk to me)",
+    spanish_phrase: "Háblame."
+}, {
+    english_phrase: "Can I enter/come in?",
+    spanish_phrase: "Puedo entrar/pasar?"
+}, {
+    english_phrase: "Can I have a napkin, please?",
+    spanish_phrase: "Puedo tener una servilleta?"
+}, {
+    english_phrase: "Can I have more, please?",
+    spanish_phrase: "Puedo tener más, por favor?"
+}, {
+    english_phrase: "Can I have one?",
+    spanish_phrase: "Puedo tener uno?"
+}, {
     english_phrase: "Can I have water, please?",
     spanish_phrase: "Puedo tener agua, por favor?"
-  });
+}, {
+    english_phrase: "Can I help you?",
+    spanish_phrase: "¿Podría Ayudarse?"
+}, {
+    english_phrase: "Can we share?",
+    spanish_phrase: "Podemos compartir?"
+}, {
+    english_phrase: "Can you help me?",
+    spanish_phrase: "¿Puede Ayudarme?"
+}, {
+    english_phrase: "Can you help me?",
+    spanish_phrase: "Me puedes ayudar?"
+}, {
+    english_phrase: "Can you hold this, please?",
+    spanish_phrase: "Puedes guardarlo, por favor?"
+}, {
+    english_phrase: "Can you loan me $5?",
+    spanish_phrase: "Me puedes prestar $5?"
+}, {
+    english_phrase: "Can you pass the salt/pepper?",
+    spanish_phrase: "Me puede pasar la sal/el pimiento?"
+}, {
+    english_phrase: "Can You Say It Again?",
+    spanish_phrase: "¡Puede Repetirlo!"
+}, {
+    english_phrase: "Can You Speak Slowly?",
+    spanish_phrase: "¡Puedes Hablar Más Despacio!"
+}, {
+    english_phrase: "Cheese",
+    spanish_phrase: "Queso"
+}, {
+    english_phrase: "Come with me!",
+    spanish_phrase: "¡Venga Conmigo!"
+}, {
+    english_phrase: "Common Questions",
+    spanish_phrase: "Preguntas Más Frecuentes"
+}, {
+    english_phrase: "Congratulations!",
+    spanish_phrase: "¡felicidades!"
+}, {
+    english_phrase: "Did you like it here?",
+    spanish_phrase: "¿Le gusta a usted aquí?"
+}, {
+    english_phrase: "Do you have change?",
+    spanish_phrase: "Tienes cambio?"
+}, {
+    english_phrase: "Do you have children?",
+    spanish_phrase: "Tienes hijos?"
+}, {
+    english_phrase: "Do you like it?",
+    spanish_phrase: "¿Te Gusta? ¿Te Encanta?"
+}, {
+    english_phrase: "Do you sell _______ here?",
+    spanish_phrase: "Se vende ______ aquí?"
+}, {
+    english_phrase: "Do you speak (English/ Spanish)?",
+    spanish_phrase: "¿Hablas (Inglés/ Español)?"
+}, {
+    english_phrase: "Do you want one?",
+    spanish_phrase: "Quieres uno?"
+}, {
+    english_phrase: "Do you want to buy this?",
+    spanish_phrase: "¿Quiere comprarlo usted?"
+}, {
+    english_phrase: "Don't worry!",
+    spanish_phrase: "¡No Te Preocupes!"
+}, {
+    english_phrase: "Enjoy! (for meals...)",
+    spanish_phrase: "¡Que Aproveche!"
+}, {
+    english_phrase: "Excuse me ...! (to ask for something)",
+    spanish_phrase: "¡Perdone! / ¡Oiga!"
+}, {
+    english_phrase: "Excuse me! ( to pass by)",
+    spanish_phrase: "¡Perdone! / Disculpe!"
+}, {
+    english_phrase: "Excuse me.",
+    spanish_phrase: "Con permiso. OR Perdóname"
+}, {
+    english_phrase: "Fork",
+    spanish_phrase: "Tenedor"
+}, {
+    english_phrase: "Four, Five, Six",
+    spanish_phrase: "Cuatro, Cinco, Seis"
+}, {
+    english_phrase: "Give me this!",
+    spanish_phrase: "¡Dame Eso!"
+}, {
+    english_phrase: "Go straight! then turn left/ right!",
+    spanish_phrase: "¡Vaya Ud Derecho! Pues Tuerza Ud por la Izquierda/ Derecha!"
+}, {
+    english_phrase: "Good afternoon.",
+    spanish_phrase: "Buenas tardes."
+}, {
+    english_phrase: "Good bye!",
+    spanish_phrase: "¡Adiós!"
+}, {
+    english_phrase: "Good evening!",
+    spanish_phrase: "¡Buenas Tardes!"
+}, {
+    english_phrase: "Good evening. (greeting)",
+    spanish_phrase: "Buenas noches."
+}, {
+    english_phrase: "Good luck!",
+    spanish_phrase: "¡Que Tenga Suerte!"
+}, {
+    english_phrase: "Good morning!",
+    spanish_phrase: "¡Buenos Días!"
+}, {
+    english_phrase: "Good morning.",
+    spanish_phrase: "Buenos días."
+}, {
+    english_phrase: "Good night and sweet dreams!",
+    spanish_phrase: "¡Buenas Noches Y Dulces Sueños!"
+}, {
+    english_phrase: "Good night!",
+    spanish_phrase: "¡Buenas noches!"
+}, {
+    english_phrase: "Good/ Bad/ So-So.",
+    spanish_phrase: "Bueno/ Malo/ Así Así"
+}, {
+    english_phrase: "Good/ So-So.",
+    spanish_phrase: "Bíen/ Así Así"
+}, {
+    english_phrase: "Goodbye.",
+    spanish_phrase: "Adiós."
+}, {
+    english_phrase: "Goodbyes",
+    spanish_phrase: "Despedidas"
+}, {
+    english_phrase: "Greetings",
+    spanish_phrase: "Saludos"
+}, {
+    english_phrase: "Hamburger",
+    spanish_phrase: "Hamburguesa"
+}, {
+    english_phrase: "Happy birthday!",
+    spanish_phrase: "¡Feliz Cumpleaños!"
+}, {
+    english_phrase: "Happy new year!",
+    spanish_phrase: "¡Feliz Año Nuevo!"
+}, {
+    english_phrase: "Have a good day!",
+    spanish_phrase: "Ten un buen día!"
+}, {
+    english_phrase: "Hello, my name is John.",
+    spanish_phrase: "Hola, me llamo Juan."
+}, {
+    english_phrase: "Hello! How are you?",
+    spanish_phrase: "Hola! Cómo estás?"
+}, {
+    english_phrase: "Here you go! (when giving something)",
+    spanish_phrase: "¡Aquí Tiene!"
+}, {
+    english_phrase: "Hey! Friend!",
+    spanish_phrase: "¡Eh! ¡Amigo!"
+}, {
+    english_phrase: "Hi!",
+    spanish_phrase: "¡Hola!"
+}, {
+    english_phrase: "Hold on please! (phone)",
+    spanish_phrase: "¡No Cuelgue, Por Favor!"
+}, {
+    english_phrase: "How are you?",
+    spanish_phrase: "¿Cómo está usted?"
+}, {
+    english_phrase: "How are you?",
+    spanish_phrase: "¿Cómo Estás?"
+}, {
+    english_phrase: "How Do You Say ",
+    spanish_phrase: "¿Cómo Se Dice "
+}, {
+    english_phrase: "How do you say maybe in Spanish?",
+    spanish_phrase: "¿Cómo se dice maybe en Español?"
+}, {
+    english_phrase: "How long have you lived here?",
+    spanish_phrase: "Cuánto tiempo tienes aquí?"
+}, {
+    english_phrase: "How many are there?",
+    spanish_phrase: "¿Cuántos hay?"
+}, {
+    english_phrase: "How much does it cost?",
+    spanish_phrase: "¿Cuánto cuesta?"
+}, {
+    english_phrase: "How much does it cost?",
+    spanish_phrase: "Cuánto cuesta?"
+}, {
+    english_phrase: "How much is this?",
+    spanish_phrase: "¿Cuánto Vale/ Cuesta Eso?"
+}, {
+    english_phrase: "How old are you?",
+    spanish_phrase: "¿Cuántos Años Tienes?"
+}, {
+    english_phrase: "Hurry up!",
+    spanish_phrase: "¡Date Prisa!"
+}, {
+    english_phrase: "I am fine.",
+    spanish_phrase: "Estoy bien."
+}, {
+    english_phrase: "I am lost. Where is the restroom?",
+    spanish_phrase: "Estoy perdido. ¿Dónde está el baño?"
+}, {
+    english_phrase: "I do not understand.",
+    spanish_phrase: "Yo no comprendo."
+}, {
+    english_phrase: "I Don't Know!",
+    spanish_phrase: "¡No (Lo) Sé!"
+}, {
+    english_phrase: "I Don't Understand!",
+    spanish_phrase: "¡No Entiendo!"
+}, {
+    english_phrase: "I don’t have children.",
+    spanish_phrase: "No tengo hijos."
+}, {
+    english_phrase: "I feel sick.",
+    spanish_phrase: "Estoy Mareado"
+}, {
+    english_phrase: "I have allergies.",
+    spanish_phrase: "Tengo alergiás."
+}, {
+    english_phrase: "I Have No Idea.",
+    spanish_phrase: "¡No Tengo Ni Idea!"
+}, {
+    english_phrase: "I have to go",
+    spanish_phrase: "Me Tengo Que Ir."
+}, {
+    english_phrase: "I have two sons/daughters.",
+    spanish_phrase: "Tengo dos hijos/hijas."
+}, {
+    english_phrase: "I hope you have a good day!",
+    spanish_phrase: "Que tenga un buen día!"
+}, {
+    english_phrase: "I like Spanish",
+    spanish_phrase: "Me Gusta El Español"
+}, {
+    english_phrase: "I live in (the U.S/ Spain)",
+    spanish_phrase: "Vivo En (los Estados Unidos/ España)"
+}, {
+    english_phrase: "I love you!",
+    spanish_phrase: "¡Te Quiero!"
+}, {
+    english_phrase: "I missed you so much!",
+    spanish_phrase: "Te extrañé mucho!"
+}, {
+    english_phrase: "I need a doctor",
+    spanish_phrase: "!Necesito un medico!"
+}, {
+    english_phrase: "I need to practice my Spanish",
+    spanish_phrase: "me falta práctica en Español"
+}, {
+    english_phrase: "I really like it!",
+    spanish_phrase: "¡Me Gusta/ Encanta Mucho!"
+}, {
+    english_phrase: "I want a…",
+    spanish_phrase: "Quiero un…"
+}, {
+    english_phrase: "I will be right back!",
+    spanish_phrase: "Regreso En Un Momentito."
+}, {
+    english_phrase: "I work as a (translator/ businessman)",
+    spanish_phrase: "Trabajo Como (Traductor/ Hombre de Negocios)"
+}, {
+    english_phrase: "I would like…",
+    spanish_phrase: "Me gustaría…"
+}, {
+    english_phrase: "I'd like to visit Spain one day",
+    spanish_phrase: "Me Gustaría Visitar Algún Día Tu País"
+}, {
+    english_phrase: "I'm (American)",
+    spanish_phrase: "Soy (americano/ americana)"
+}, {
+    english_phrase: "I'm (twenty, thirty...) years old.",
+    spanish_phrase: "Tengo (veinte ...treinta) Años."
+}, {
+    english_phrase: "I'm fine, thanks!",
+    spanish_phrase: "Estoy Bíen ¡Gracias!"
+}, {
+    english_phrase: "I'm from (the U.S/ Spain)",
+    spanish_phrase: "Soy De (los Estados Unidos/ España..) / Soy (americano)"
+}, {
+    english_phrase: "I'm hungry/ thirsty.",
+    spanish_phrase: "Tengo Hambre/ Sed."
+}, {
+    english_phrase: "I'm looking for john.",
+    spanish_phrase: "Estoy Buscando A Juan."
+}, {
+    english_phrase: "I'm lost",
+    spanish_phrase: "Estoy perdido"
+}, {
+    english_phrase: "I'm Sorry! (if you don't hear something)",
+    spanish_phrase: "¡Discuple!"
+}, {
+    english_phrase: "I'm sorry.",
+    spanish_phrase: "Lo siento."
+}, {
+    english_phrase: "I've been learning Spanish for 1 month",
+    spanish_phrase: "Tengo Un Mes Estudiando Español"
+}, {
+    english_phrase: "I’m a doctor, professor, lawyer.",
+    spanish_phrase: "Soy doctor, profesor, abogado."
+}, {
+    english_phrase: "I’m a vegetarian/vegan.",
+    spanish_phrase: "Soy vegetariano/vegan."
+}, {
+    english_phrase: "I’m from ____________.",
+    spanish_phrase: "Soy de _____________."
+}, {
+    english_phrase: "In The Morning/ Evening/ At Night.",
+    spanish_phrase: "Por La Mañana/ Tarde/ Noche."
+}, {
+    english_phrase: "It was a pleasure to meet you.",
+    spanish_phrase: "Fue un placer conocerte."
+}, {
+    english_phrase: "It's 10 o'clock. 07:30pm.",
+    spanish_phrase: "Son las diez en punto. Las siete y media."
+}, {
+    english_phrase: "Just a little.",
+    spanish_phrase: "Solo Un Poquito."
+}, {
+    english_phrase: "Knife",
+    spanish_phrase: "Cuchillo"
+}, {
+    english_phrase: "Lettuce",
+    spanish_phrase: "Lechuga"
+}, {
+    english_phrase: "Lime/lemon",
+    spanish_phrase: "Limón"
+}, {
+    english_phrase: "Look!",
+    spanish_phrase: "¡Mira!"
+}, {
+    english_phrase: "Me/ You. Him/ Her.",
+    spanish_phrase: "Yo/ Tú. Él/ Ella"
+}, {
+    english_phrase: "Merry Christmas!",
+    spanish_phrase: "¡Feliz Navidad!"
+}, {
+    english_phrase: "Mr.../ Mrs.…/ Miss…",
+    spanish_phrase: "Señor.../ Señora.../ Señorita..."
+}, {
+    english_phrase: "My name is __________.",
+    spanish_phrase: "Me llamo __________."
+}, {
+    english_phrase: "My name is ...",
+    spanish_phrase: "Me llamo ..."
+}, {
+    english_phrase: "My Spanish is bad.",
+    spanish_phrase: "Mi Español Es Malo"
+}, {
+    english_phrase: "Nice to meet you!",
+    spanish_phrase: "¡Tanto Gusto! / Medio Gusto Conocerte!"
+}, {
+    english_phrase: "Nice to meet you.",
+    spanish_phrase: "Mucho gusto."
+}, {
+    english_phrase: "No meat, please.",
+    spanish_phrase: "Sin carne, por favor."
+}, {
+    english_phrase: "No Problem!",
+    spanish_phrase: "¡No Problema!"
+}, {
+    english_phrase: "No.",
+    spanish_phrase: "No."
+}, {
+    english_phrase: "Nothing much",
+    spanish_phrase: "Nada"
+}, {
+    english_phrase: "Oh! That's good!",
+    spanish_phrase: "!Oh, qué bueno!"
+}, {
+    english_phrase: "One beer, please.",
+    spanish_phrase: "Una cerveza, por favor."
+}, {
+    english_phrase: "One glass of red/white wine, please.",
+    spanish_phrase: "Una copa de vino rojo/blanco, por favor."
+}, {
+    english_phrase: "One moment please!",
+    spanish_phrase: "¡Un Momento, Por Favor!"
+}, {
+    english_phrase: "One, Two, Three",
+    spanish_phrase: "Uno, Dos, Tres"
+}, {
+    english_phrase: "Pasta",
+    spanish_phrase: "Pasta"
+}, {
+    english_phrase: "Please.",
+    spanish_phrase: "Por favor."
+}, {
+    english_phrase: "Really!",
+    spanish_phrase: "¡Verdad!"
+}, {
+    english_phrase: "Rice",
+    spanish_phrase: "Arróz"
+}, {
+    english_phrase: "Sandwich",
+    spanish_phrase: "Sándwich, Bocadillo"
+}, {
+    english_phrase: "Say hi to John for me",
+    spanish_phrase: "Dale Saludos A ( Juan ...) De Mi Parte"
+}, {
+    english_phrase: "See you in a little bit!",
+    spanish_phrase: "Nos vemos al rato! (en México)"
+}, {
+    english_phrase: "See you later!",
+    spanish_phrase: "¡Hasta luego!"
+}, {
+    english_phrase: "See you later!",
+    spanish_phrase: "Hasta luego!"
+}, {
+    english_phrase: "See you later.",
+    spanish_phrase: "Hasta luego."
+}, {
+    english_phrase: "Seven, Eight, Nine, Ten",
+    spanish_phrase: "Siete, Ocho, Nueve, Diez"
+}, {
+    english_phrase: "Sorry (for a mistake)",
+    spanish_phrase: "¡Lo Siento!"
+}, {
+    english_phrase: "Spain is a wonderful country",
+    spanish_phrase: "España Es Un País Maravelloso"
+}, {
+    english_phrase: "Spoon",
+    spanish_phrase: "Cuchara"
+}, {
+    english_phrase: "Straw",
+    spanish_phrase: "Popote"
+}, {
+    english_phrase: "Thank you (very much)!",
+    spanish_phrase: "¡(Muchas) Gracias!"
+}, {
+    english_phrase: "Thank you.",
+    spanish_phrase: "Gracías."
+}, {
+    english_phrase: "There are many.",
+    spanish_phrase: "Hay muchos."
+}, {
+    english_phrase: "This/ That. Here/There",
+    spanish_phrase: "Eso/Ese. Aquí/ Allí"
+}, {
+    english_phrase: "Today/ Now",
+    spanish_phrase: "Hoy/ Ahora"
+}, {
+    english_phrase: "Tomato",
+    spanish_phrase: "Tomate"
+}, {
+    english_phrase: "Tomorrow/ Yesterday",
+    spanish_phrase: "Mañana/ Ayer"
+}, {
+    english_phrase: "We’ll meet on _________ (day).",
+    spanish_phrase: "Nos reunimos el ________ (día)."
+}, {
+    english_phrase: "We’ll see each other later!",
+    spanish_phrase: "Nos vemos!"
+}, {
+    english_phrase: "We’ll talk later.",
+    spanish_phrase: "Nos hablamos luego."
+}, {
+    english_phrase: "Welcome! (to greet someone)",
+    spanish_phrase: "¡Bienvenido!"
+}, {
+    english_phrase: "What do you do for a living?",
+    spanish_phrase: "¿A Qué Te Dedicas?"
+}, {
+    english_phrase: "What Does ",
+    spanish_phrase: "¿Qué Quiere Decir "
+}, {
+    english_phrase: "What Is This?",
+    spanish_phrase: "¿Qué Es Esto?"
+}, {
+    english_phrase: "What is your last name?",
+    spanish_phrase: "Cuál es tu apellido?"
+}, {
+    english_phrase: "What is your name?",
+    spanish_phrase: "¿Cómo se llama usted?"
+}, {
+    english_phrase: "What time is it?",
+    spanish_phrase: "¿Qué hora es?"
+}, {
+    english_phrase: "What would you like to drink?",
+    spanish_phrase: "Qué le gustaría tomar/beber?"
+}, {
+    english_phrase: "What would you like to eat?",
+    spanish_phrase: "Qué le gustaría comer?"
+}, {
+    english_phrase: "What? Where?",
+    spanish_phrase: "¿Qué? ¿Dónde?"
+}, {
+    english_phrase: "What's new?",
+    spanish_phrase: "¿Qué Hay De Nuevo?"
+}, {
+    english_phrase: "What's That Called In Spanish?",
+    spanish_phrase: "¿Cómo Se llama a Esto En Español?"
+}, {
+    english_phrase: "What's your name?",
+    spanish_phrase: "¿Cómo te llamas?"
+}, {
+    english_phrase: "What’s your name?",
+    spanish_phrase: "Cómo te llamas?"
+}, {
+    english_phrase: "Where are we right now?",
+    spanish_phrase: "Dónde estamos ahora?"
+}, {
+    english_phrase: "Where are you from?",
+    spanish_phrase: "¿De Dónde Eres?"
+}, {
+    english_phrase: "Where are you from?",
+    spanish_phrase: "De dónde eres?"
+}, {
+    english_phrase: "Where do you live?",
+    spanish_phrase: "¿Dónde Vives?"
+}, {
+    english_phrase: "Where do you live?",
+    spanish_phrase: "Dónde vives?"
+}, {
+    english_phrase: "Where do you work?",
+    spanish_phrase: "Dónde trabajas?"
+}, {
+    english_phrase: "Where is my room?",
+    spanish_phrase: "Dónde está mi cuarto?"
+}, {
+    english_phrase: "Where is the __________ street?",
+    spanish_phrase: "Dónde está la calle ________?"
+}, {
+    english_phrase: "Where is the (bathroom/ pharmacy)?",
+    spanish_phrase: "¿Dónde Está (el Baño/ la Farmacia)?"
+}, {
+    english_phrase: "Where is the bathroom?",
+    spanish_phrase: "Dónde está el baño?"
+}, {
+    english_phrase: "Where is the bus?",
+    spanish_phrase: "Dónde está el autobús?"
+}, {
+    english_phrase: "Who?",
+    spanish_phrase: "¿Quièn?"
+}, {
+    english_phrase: "Why?",
+    spanish_phrase: "¿Por què?"
+}, {
+    english_phrase: "With…",
+    spanish_phrase: "Con…"
+}, {
+    english_phrase: "Without…",
+    spanish_phrase: "Sin…"
+}, {
+    english_phrase: "Would you speak slower, please.",
+    spanish_phrase: "Por favor, habla mas despacio."
+}, {
+    english_phrase: "Write It Down Please!",
+    spanish_phrase: "¡Escríbalo, Por Favor!"
+}, {
+    english_phrase: "Yes.",
+    spanish_phrase: "Sí."
+}, {
+    english_phrase: "Yes/ No",
+    spanish_phrase: "Sí/ No"
+}, {
+    english_phrase: "You are welcome (it was nothing).",
+    spanish_phrase: "De nada."
+}, {
+    english_phrase: "You're very kind!",
+    spanish_phrase: "¡Eres Muy Amable!"
+}, {
+    english_phrase: "You're welcome! (for ",
+    spanish_phrase: "¡De Nada!"
+}]);
 };
 
 var italianCreate = function() {
