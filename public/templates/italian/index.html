@@ -1,0 +1,37 @@
+
+		<div class="container">
+    <h2>Italian Phrases</h2>
+    <a class="btn btn-block btn-sm btn-primary" href="italian/new">Add your own Italian Phrase </a>
+			<div class="row">
+  
+        <div id="fh5co-board" data-columns> 
+     					<div class="col-md-4" ng-repeat="italian in italians.allItalians">
+							<div class="fh5co-pricing-table" ng-hide="selected.index === $index">
+								<h3>{{italian.english_phrase}}</h3>
+
+
+<!-- <button class="btn btn-block btn-sm btn-primary" ng-click="showItalian=true" ng-if="showItalian=true">In Italian</button> -->
+<button class="btn btn-block btn-sm btn-primary" ng-click="showItalian=true" ng-hide="showItalian">In Italian</button>
+
+                <div ng-show="showItalian">
+                <h4>{{italian.italian_phrase}}</h4>
+<!--      <button class="btn btn-block btn-sm btn-primary" ng-click="showItalian=false" ng-hide="showItalian">Hide Italian</button> -->
+     <button ng-click="showItalian=false" class="btn btn-block btn-sm btn-primary">Hide Italian</button>
+                </div>
+
+<a href"javascript:void(0)" ng-click="selected.index = $index">Remove</label>
+    </div>
+
+
+               
+						
+							</div>
+						</div>       	
+        	 </div>
+        </div>
+       </div>
+	</div>
+
+ 
+
+

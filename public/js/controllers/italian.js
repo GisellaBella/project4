@@ -13,6 +13,7 @@ function ItalianIndexController($http) {
 		$http.get('/api/italian')
 			.then(function(response) {
 				vm.allItalians = response.data;
+				shuffleArray(vm.allItalians); //shuffle function below.
 			});		
 	}
 
@@ -26,6 +27,22 @@ function ItalianIndexController($http) {
 
 	getAllItalians();
 }
+
+ // -> Fisher–Yates shuffle algorithm
+var shuffleArray = function(array) {
+  var m = array.length, t, i;
+  // While there remain elements to shuffle
+  while (m) {
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
+    // And swap it with the current element.
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  return array;
+};   
+
 
 ItalianShowController.$inject = ["$http", "$routeParams"];
 function ItalianShowController($http, $routeParams) {
@@ -44,9 +61,10 @@ function ItalianShowController($http, $routeParams) {
 }
 
 ItalianNewController.$inject = ["$http", "$location"];
-function ItalianNewController($http, $location) {
+function ItalianNewController($http, $location ) {
 	var vm = this;
 	vm.saveItalian = saveItalian;
+
 
 	function saveItalian() {
 		console.log(vm.newItalian);
@@ -80,6 +98,7 @@ function ItalianEditController($http, $routeParams, $location) {
 				$location.path("/italian/" + italian.id);
 			});			
 	}
+
 
 	getItalian();
 }

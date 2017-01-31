@@ -17,52 +17,52 @@ angular.module("kvizoApp", ['ngRoute'])
 			//Italian Routes
 			  
 			// index
-			.when('/italians', {
-				templateUrl: '/templates/italians/index.html',
-				controller: "ItalianIndexController as italiansController"
+			.when('/italian', {
+				templateUrl: '/templates/italian/index.html',
+				controller: "ItalianIndexController as italians"
 			})
 
-			// new
-			.when('/italians/new', {
-				templateUrl: '/templates/italians/new.html',
-				controller: "ItalianNewController as italianNewController"
+			// new (create)
+			.when('/italian/new', {
+				templateUrl: '/templates/italian/new.html',
+				controller: "ItalianNewController as new"
 			})
 
 			// show
-			.when('/italians/:id', {
-				templateUrl: '/templates/italians/show.html',
-				controller: "ItalianShowController as italianController"
+			.when('/italian/:id', {
+				templateUrl: '/templates/italian/show.html',
+				controller: "ItalianShowController as show"
 			})
 
 			// edit
-			.when('/italians/:id/edit', {
-				templateUrl: '/templates/italians/edit.html',
+			.when('/italian/:id/edit', {
+				templateUrl: '/templates/italian/edit.html',
 				controller: "ItalianEditController as italianEditController"
 			})
 
 			//Spanish Routes
 			  
 			// index
-			.when('/spanishs', {
-				templateUrl: '/templates/spanishs/index.html',
+			.when('/spanish', {
+				templateUrl: '/templates/spanish/index.html',
 				controller: "SpanishIndexController as spanishsController"
 			})
 
 			// new
-			.when('/spanishs/new', {
-				templateUrl: '/templates/spanishs/new.html',
+			.when('/spanish/new', {
+				templateUrl: '/templates/spanish/new.html',
 				controller: "SpanishNewController as spanishNewController"
 			})
 
 			// show
-			.when('/spanishs/:id', {
-				templateUrl: '/templates/spanishs/show.html',
+			.when('/spanish/:id', {
+				templateUrl: '/templates/spanish/show.html',
 				controller: "SpanishShowController as spanishController"
 			})
 
 			// edit
-			.when('/spanishs/:id/edit', {
-				templateUrl: '/templates/spanishs/edit.html',
+			.when('/spanish/:id/edit', {
+				templateUrl: '/templates/spanish/edit.html',
 				controller: "SpanishEditController as spanishEditController"
 			});
 

@@ -10,17 +10,17 @@ function SpanishIndexController($http) {
 	vm.deleteSpanish = deleteSpanish;
 
 	function getAllSpanishs() {
-		$http.get('/api/spanishs')
+		$http.get('/api/spanish')
 			.then(function(response) {
 				vm.allSpanishs = response.data;
 			});		
 	}
 
 	function deleteSpanish(spanish) {
-		$http.delete('/api/spanishs/'+spanish.id)
+		$http.delete('/api/spanish/'+spanish.id)
 			.then(function(response) {
-				var spanishIndex = vm.allSpanishs.indexOf(spanish);
-				vm.allSpanishs.splice(spanishIndex, 1);
+				var spanishIndex = vm.allSpanishes.indexOf(spanish);
+				vm.allSpanishes.splice(spanishIndex, 1);
 			});
 	}
 
@@ -32,7 +32,7 @@ function SpanishShowController($http, $routeParams) {
 	var vm = this;
 	
 	function getOneSpanish() {
-		$http.get('/api/spanishs/'+$routeParams.id)
+		$http.get('/api/spanish/'+$routeParams.id)
 			.then(function(response) {
 				vm.oneSpanish = response.data;
 			});			
@@ -47,10 +47,10 @@ function SpanishNewController($http, $location) {
 	vm.saveSpanish = saveSpanish;
 
 	function saveSpanish() {
-		$http.post('/api/spanishs/', vm.newSpanish)
+		$http.post('/api/spanish/', vm.newSpanish)
 			.then(function(response) {
 				var spanish = response.data;
-				$location.path("/spanishs/" + spanish.id);
+				$location.path("/spanish/" + spanish.id);
 			});		
 	}
 
@@ -62,17 +62,17 @@ function SpanishEditController($http, $routeParams, $location) {
 	vm.updateSpanish = updateSpanish;
 
 	function getSpanish() {
-		$http.get('/api/spanishs/'+$routeParams.id)
+		$http.get('/api/spanish/'+$routeParams.id)
 			.then(function(response) {
 				vm.updatedSpanish = response.data;
 			});			
 	}
 
 	function updateSpanish() {
-		$http.put('/api/spanishs/'+$routeParams.id, vm.updatedSpanish)
+		$http.put('/api/spanish/'+$routeParams.id, vm.updatedSpanish)
 			.then(function(response) {
 				var spanish = response.data;
-				$location.path("/spanishs/" + spanish.id);
+				$location.path("/spanish/" + spanish.id);
 			});			
 	}
 

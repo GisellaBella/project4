@@ -1,5 +1,5 @@
 {
-  "name": "Kvizo",
+  "name": "kvizo",
   "authors": [
     "Gisella Walter <gisella@gmail.com>"
   ],
@@ -9,10 +9,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "bower_components"
   ],
   "dependencies": {
     "angular": "^1.6.1",
-    "angular-route": "^1.6.1"
+    "angular-route": "^1.6.1",
+    "angular-modal-service": "^0.10.1"
   }
 }
