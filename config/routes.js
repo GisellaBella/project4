@@ -24,19 +24,19 @@ router.delete('/api/italian/:id', italiansController.destroy);
 //Spanish Routes
 
 // index
-router.get('/api/spanishs', spanishsController.index);
+router.get('/api/spanish', spanishsController.index);
 
 // create
-router.post('/api/spanishs', spanishsController.create);
+router.post('/api/spanish', spanishsController.create);
 
 // show
-router.get('/api/spanishs/:id', spanishsController.show);
+router.get('/api/spanish/:id', spanishsController.show);
 
 // update
-router.put('/api/spanishs/:id', spanishsController.update);
+router.put('/api/spanish/:id', spanishsController.update);
 
 // destroy
-router.delete('/api/spanishs/:id', spanishsController.destroy);
+router.delete('/api/spanish/:id', spanishsController.destroy);
 
 
 module.exports = router;

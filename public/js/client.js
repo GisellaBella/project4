@@ -45,25 +45,25 @@ angular.module("kvizoApp", ['ngRoute'])
 			// index
 			.when('/spanish', {
 				templateUrl: '/templates/spanish/index.html',
-				controller: "SpanishIndexController as spanishsController"
+				controller: "SpanishIndexController as spanish"
 			})
 
 			// new
 			.when('/spanish/new', {
 				templateUrl: '/templates/spanish/new.html',
-				controller: "SpanishNewController as spanishNewController"
+				controller: "SpanishNewController as new"
 			})
 
 			// show
 			.when('/spanish/:id', {
 				templateUrl: '/templates/spanish/show.html',
-				controller: "SpanishShowController as spanishController"
+				controller: "SpanishShowController as show"
 			})
 
 			// edit
 			.when('/spanish/:id/edit', {
 				templateUrl: '/templates/spanish/edit.html',
-				controller: "SpanishEditController as spanishEditController"
+				controller: "SpanishEditController as edit"
 			});
 
 			
