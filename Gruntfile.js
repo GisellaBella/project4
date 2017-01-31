@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     uncss: {
     dist: {
       files: {
-        'public/css/styles.css': ['public/newindex.html']
+        'public/css/style.css': ['public/index.html', 'public/templates/italian/new.html', 'public/templates/italian/show.html', 'public/templates/italian/index.html']
       }
     }
   }
