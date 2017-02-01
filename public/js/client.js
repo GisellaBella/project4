@@ -65,14 +65,14 @@ angular.module("kvizoApp", ['ngRoute'])
 			.when('/spanish/:id/edit', {
 				templateUrl: '/templates/spanish/edit.html',
 				controller: "CardEditSpController as edit"
-			})
+			});
 
-			// Create Routes
-			.when('/create', {
-			templateUrl: '/templates/card/new.html',
-			controller: "CardNewController as new"
+		// 	// Create Routes
+		// 	.when('/card', {
+		// 	templateUrl: '/templates/card/index.html',
+		// 	controller: "CardNewController as new"
 
-		});
+		// });
 
 			
   });
