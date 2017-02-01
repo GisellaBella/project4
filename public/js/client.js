@@ -8,36 +8,37 @@ angular.module("kvizoApp", ['ngRoute'])
     $routeProvider
     	//Main Routes
       .when('/', {
-        templateUrl: '/templates/home.html'
+        templateUrl: '/templates/home.html',
+        controller: "CardIndexController as cards"
       })
-      .when('/about', {
-      	templateUrl: '/templates/about.html'
-      })
+      // .when('/about', {
+      // 	templateUrl: '/templates/about.html'
+      // })
 
 			//Italian Routes
 			  
 			// index
 			.when('/italian', {
 				templateUrl: '/templates/italian/index.html',
-				controller: "ItalianIndexController as italians"
+				controller: "CardIndexController as cards"
 			})
 
 			// new (create)
 			.when('/italian/new', {
 				templateUrl: '/templates/italian/new.html',
-				controller: "ItalianNewController as new"
+				controller: "CardNewItController as new"
 			})
 
 			// show
 			.when('/italian/:id', {
 				templateUrl: '/templates/italian/show.html',
-				controller: "ItalianShowController as show"
+				controller: "CardShowItController as show"
 			})
 
 			// edit
 			.when('/italian/:id/edit', {
 				templateUrl: '/templates/italian/edit.html',
-				controller: "ItalianEditController as italianEditController"
+				controller: "CardEditItController as edit"
 			})
 
 			//Spanish Routes
@@ -45,26 +46,33 @@ angular.module("kvizoApp", ['ngRoute'])
 			// index
 			.when('/spanish', {
 				templateUrl: '/templates/spanish/index.html',
-				controller: "SpanishIndexController as spanish"
+				controller: "CardIndexController as cards"
 			})
 
 			// new
 			.when('/spanish/new', {
 				templateUrl: '/templates/spanish/new.html',
-				controller: "SpanishNewController as new"
+				controller: "CardNewSpController as new"
 			})
 
 			// show
 			.when('/spanish/:id', {
 				templateUrl: '/templates/spanish/show.html',
-				controller: "SpanishShowController as show"
+				controller: "CardShowSpController as show"
 			})
 
 			// edit
 			.when('/spanish/:id/edit', {
 				templateUrl: '/templates/spanish/edit.html',
-				controller: "SpanishEditController as edit"
-			});
+				controller: "CardEditSpController as edit"
+			})
+
+			// Create Routes
+			.when('/create', {
+			templateUrl: '/templates/create/index.html',
+			controller: "CardNewController as new"
+
+		});
 
 			
   });
