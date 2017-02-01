@@ -9,7 +9,23 @@ pg.connect(process.env.DATABASE_URL, function(err, client, done) {
   });
 });
 
-var sequelize = new Sequelize('postgres://gisellawalter@localhost:5432/kvizo');
+
+var Sequelize = require('sequelize'), sequelize = null;
+
+if (process.env.HEROKU_POSTGRESQL_DATABASE_URL) {
+    // the application is executed on Heroku ... use the postgres database
+    sequelize = new Sequelize(process.env.HEROKU_POSTGRESQL_DATABASE_URL, {
+      dialect:  'postgres',
+      protocol: 'postgres',
+      port:     match[4],
+      host:     match[3],
+      logging:  true //false
+    });
+  } else {
+    // the application is executed on the local machine ... use mysql
+    sequelize = new Sequelize('postgres://gisellawalter@localhost:5432/kvizo');
+  }
+
 
 
 //Export models and Sequelize for seed and dbSetup
