@@ -32,13 +32,13 @@ angular.module("kvizoApp", ['ngRoute'])
 			// show
 			.when('/italian/:id', {
 				templateUrl: '/templates/italian/show.html',
-				controller: "CardShowItController as show"
+				controller: "CardShowItController as showIt"
 			})
 
 			// edit
-			.when('/italian/:id/edit', {
+			.when('/italian/id/edit', {
 				templateUrl: '/templates/italian/edit.html',
-				controller: "CardEditItController as edit"
+				controller: "CardEditItController as editIt"
 			})
 
 			//Spanish Routes
@@ -69,7 +69,7 @@ angular.module("kvizoApp", ['ngRoute'])
 
 			// Create Routes
 			.when('/create', {
-			templateUrl: '/templates/create/index.html',
+			templateUrl: '/templates/card/new.html',
 			controller: "CardNewController as new"
 
 		});

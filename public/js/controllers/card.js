@@ -8,7 +8,7 @@ angular.module("kvizoApp")
 	.controller("CardNewItController", CardNewItController)
 	.controller("CardEditController", CardEditController)
 	.controller("CardEditItController", CardEditItController)
-	.controller("CardEditItController", CardEditItController);
+	.controller("CardEditSpController", CardEditSpController);
 
 CardIndexController.$inject = ["$http"];
 function CardIndexController($http) {
@@ -35,19 +35,24 @@ function CardIndexController($http) {
 }
 
  // -> Fisher–Yates shuffle algorithm
-var shuffleArray = function(array) {
-  var m = array.length, t, i;
-  // While there remain elements to shuffle
-  while (m) {
-    // Pick a remaining element…
-    i = Math.floor(Math.random() * m--);
+function shuffleArray (array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
     // And swap it with the current element.
-    t = array[m];
-    array[m] = array[i];
-    array[i] = t;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
   }
+
   return array;
-};
+}
 
 
 
@@ -81,6 +86,35 @@ function CardNewController($http, $location ) {
 			});		
 	}
 }
+
+// CardNewBatchController.$inject = ["$http", "$location"];
+// function CardNewBatchController($http, $location ) {
+// 	var vm = this;
+
+
+// 	var cardData = {'subject': $scope.subject, 'question': $scope.question, 'answer': $scope.answer };
+	
+// 	function saveData(){
+
+// 	}
+// $http.post("http://localhost:53263/api/Products/", Indata).
+//         then(function (data, status, headers, config) { alert("success") },
+//              function (data, status, headers, config) { alert("error") });
+
+// 	data: JSON.stringify({ Album: album, User: user, UserToken: userToken }),
+//      success: function (result) {
+//         alert(result);
+
+// 	vm.saveCard = saveCard;
+// 	function saveCard() {
+// 		console.log(vm.newCard);
+// 		$http.post('/api/card/', vm.newCard)
+// 			.then(function(response) {
+// 				var card = response.data;
+// 				$location.path("/card/" + card.id);
+// 			});		
+// 	}
+// }
 
 
 
@@ -168,7 +202,7 @@ function CardShowItController($http, $routeParams) {
 	}
 
 	getOneCard();
-
+}
 CardEditItController.$inject = ["$http", "$routeParams"];
 function CardEditItController($http, $routeParams, $location) {
 	var vm = this;
@@ -218,5 +252,5 @@ function CardEditSpController($http, $routeParams, $location) {
 
 
 	getCard();
-}
+
 }
