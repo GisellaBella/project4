@@ -14,7 +14,7 @@ angular.module("kvizoApp", ['ngRoute'])
       // .when('/about', {
       // 	templateUrl: '/templates/about.html'
       // })
-
+ 
 			//Italian Routes
 			  
 			// index

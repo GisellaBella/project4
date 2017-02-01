@@ -22,6 +22,10 @@ function create(req, res) {
   });
 }
 
+// function bulkCreate = function(req, res) {
+//   return DB.Card.bulkCreate([{}
+
+
 function update(req, res) {
   Card.findById(req.params.id)
   .then(function(card){
