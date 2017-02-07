@@ -1,17 +1,16 @@
-<h2>Edit Your Card</h2>
+<h2>Edit {{edit.updatedCard.subject}} Phrase</h2>
 
 <form ng-submit="edit.updateCard()">
-  <label for="question">Phrase In English:</label>
-  <input ng-model="edit.updateCard.question">
+  <label for="subject">Subject:</label>
 
+<input placeholder="{{edit.updatedCard.subject}}" ng-model="edit.updatedCard.subject">   <label for="question">Question:</label> 
+<input placeholder="{{edit.updatedCard.question}}" ng-model="edit.updatedCard.question">   <label for="answer">Answer:</label> 
+<input placeholder="{{edit.updatedCard.answer}}" ng-model="edit.updatedCard.answer">  
 
-
-  <label for="answer">Phrase In Italian:</label>
-  <input ng-model="edit.updateCard.answer">
 
   <input type="submit" value="Update">
 
-card edit page
-
 </form>
 
+
+	

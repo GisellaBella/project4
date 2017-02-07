@@ -44,7 +44,7 @@ function destroy(req, res) {
     return card.destroy();
   })
   .then(function(){
-    res.redirect("/card");
+    res.redirect("/cards");
   });  
 }
 

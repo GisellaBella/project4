@@ -9,18 +9,14 @@
 						<div class="row">
 				
 					
-							<div class="col-md-12">
-								<div class="form-group">
-					
-								<input type = "text" class= "form-control" placeholder="What do you want to practice today?" ng-model="searchText">
+							<input type = "text" class= "form-control" placeholder="What do you want to practice today?" ng-model="searchText">
 								<table id="searchTextResults">
-								<tr ng-repeat="card in cards.allCards | filter : searchText" ng:show="$first"> <!-- {{ $index }} -->
+								<tr ng-repeat="card in cards.allCards | filter : searchText"> <!-- {{ $index }} -->
 								<td>{{card.subject}}</td>
 									
 									  </tr>
 									</table>
 								</div>
-
 
 						
 							

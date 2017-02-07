@@ -1,114 +1,32 @@
+<div class="container">
+    <h2>{{cards.subject | capitalize:'first' }} Flash Cards</h2>
+    <div class="fh5co-spacer-sm"></div>
+    <a class="btn btn-block btn-sm btn-primary" href="{{cards.subject }}/new">Add your own {{cards.subject}} Card </a>
 
-<div id="fh5co-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>Add your own Flash Card</h2>
-					<div class="fh5co-spacer fh5co-spacer-sm"></div>
-					<form ng-submit="new.saveCard()">
-						<div class="row">
+  <div class="row">
+  
+        <div id="fh5co-board" data-columns>
 
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="subject">Name of Set:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.subject">	
-								</div>
-							</div>
+            <div class="col-md-4" ng-repeat="card in cards.allCards | filter : {subject: cards.subject}">
 
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-								<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-	<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-	<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-	<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-	<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Test Question:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-								 <label for="question">Answer:</label>
-									<input class="form-control" type="text" ng-model="new.newCard.question">	
-								</div>
-							</div>
+                <div class="fh5co-pricing-table" ng-hide="selected.index === $index">
+                    <h3>{{card.question}}</h3>
 
 
+                    <button class="btn btn-block btn-sm btn-primary" ng-click="showQuestion=true" ng-hide="showQuestion">Show Answer</button>
 
-						
-				
-						</div>
-						  <input class="btn btn-primary" type="submit" value="Create">
-					</form>
-					
-				</div>
-        		
-        	</div>
-       </div>
-	</div>
+                    <div ng-show="showQuestion">
+                        <h4>{{card.answer}}</h4>
+      
+                        <button ng-click="showQuestion=false" class="btn btn-block btn-sm btn-primary">Hide Answer</button>
+                    </div>
+
+                    <a href "javascript:void(0)" ng-click="selected.index = $index">Remove Card</label></a>
+                </div>
+            </div>           
+                        
+         </div>          
+
+    </div>
+ 
+</div>

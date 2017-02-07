@@ -2,22 +2,27 @@
 <div id="fh5co-main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>Add your Card</h2>
+				<div class="col-md-8 col-md-offset-2"> 
+					<h2>Add your Flash Card</h2>
 					<div class="fh5co-spacer fh5co-spacer-sm"></div>
-					<form ng-submit="new.saveCard()">
+					<form ng-submit="new.saveCard()"> 
 						<div class="row">
-
 							<div class="col-md-6">
 								<div class="form-group">
-								 <label for="question">Question:</label>
+								 <label for="subject">subject:</label>
+									<input class="form-control" type="text" ng-model="new.newCard.subject">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								 <label for="question">Question or Phrase:</label>
 									<input class="form-control" type="text" ng-model="new.newCard.question">	
 								</div>
 							</div>
 
 							<div class="col-md-6">
 								<div class="form-group">
-								 <label for="answer">Answer:</label>
+								 <label for="answer">Answer or Translation:</label>
 									<input type="text" class="form-control" ng-model="new.newCard.answer">
 								</div>
 							</div>
